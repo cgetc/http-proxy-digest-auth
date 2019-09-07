@@ -1,0 +1,13 @@
+version: '2'
+services:
+  app:
+    build: .
+    image: https-proxy-digest-auth
+    command: go run main.go
+    volumes:
+      - ./://go/src/app/
+    environment:
+      DIGEST_USERNAME: user
+      DIGEST_PASSWORD: pass
+    ports:
+      - "80:80"
