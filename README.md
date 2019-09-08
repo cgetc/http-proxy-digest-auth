@@ -1,1 +1,1 @@
-# http-proxy-digest-auth
+# https-proxy-digest-auth
